@@ -1,0 +1,13 @@
+[
+    {"photo": "./followingphoto/1.png", "handle": "@BrainTech", "name": "Brain Technologies Inc."},
+    {"photo": "./followingphoto/2.png", "handle": "@SaltTech", "name": "Salt Tech Co."},
+    {"photo": "./followingphoto/3.png", "handle": "@BigBold", "name": "Big Bold Group of Companies"},
+    {"photo": "./followingphoto/4.png", "handle": "@BrightBulb", "name": "Idea Creative Hub"},
+    {"photo": "./followingphoto/5.png", "handle": "@HumanTechAI", "name": "Human Technologies: Artifical Intelligence"},
+    {"photo": "./followingphoto/6.png", "handle": "@NLAI", "name": "Artificial Intelligence NL - Canada"},
+    {"photo": "./followingphoto/7.png", "handle": "@InfinityTech", "name": "Infinity Technology"},
+    {"photo": "./followingphoto/8.png", "handle": "@EmojiMinds", "name": "Emoji Creative Studio"},
+    {"photo": "./followingphoto/9.png", "handle": "@TheMoonCA", "name": "The Moon Canada"},
+    {"photo": "./followingphoto/10.png", "handle": "@SystemTechCanada", "name": "System Technologies Canada"}
+
+]
