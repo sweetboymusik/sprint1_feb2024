@@ -1,4 +1,4 @@
-fetch('following.json')
+fetch('/data/following.json')
     .then(response => response.json())
     .then(following => {
         let table = document.querySelector('table');

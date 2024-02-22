@@ -80,7 +80,7 @@
     "hearts": 34,
     "bookmark": false,
     "media": [
-      "<img src='../assets/podcast.jpg' alt='photo of a microphone' class='post-image' />"
+      "<img src='../assets/feed/podcast.jpg' alt='photo of a microphone' class='post-image' />"
     ],
     "comments": [],
     "hearted": false,
