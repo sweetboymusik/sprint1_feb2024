@@ -413,9 +413,9 @@ function handleReplyAdd(e) {
   // values to be written to local storage
   let values = {
     id: id,
-    user: "user",
-    userName: "Username",
-    verified: false,
+    user: "TechHubNL",
+    userName: "Tech Hub NL",
+    verified: true,
     time: "just now",
     content: `${input}`,
     trash: true,
@@ -424,10 +424,10 @@ function handleReplyAdd(e) {
 
   // assign values to elements
   text.innerText = input;
-  userName.innerHTML = `<a href="">${"you"}</a>`;
-  userInfo.innerHTML = `@${"you"} &CenterDot; <time>just now</time>`;
+  userName.innerHTML = `<a href="">Tech Hub NL</a>`;
+  userInfo.innerHTML = `@TechHubNL &CenterDot; <time>just now</time>`;
   pic.innerHTML = `
-  <img src="../assets/feed/user.png" 
+  <img src="../assets/feed/TechHubNL.png" 
        alt="user profile picture" 
        class="post-profile-pic">`;
 

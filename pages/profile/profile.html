@@ -1,85 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-    <link rel="stylesheet" type="text/css" href="/styles/profilestyle.css">
-    <script src="https://kit.fontawesome.com/98c17c29db.js" crossorigin="anonymous"></script>
-    
-
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/98c17c29db.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="/styles/profile.css" />
+  </head>
+  <body>
     <section>
-        <div class="profile-top">
-            <a href="">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            
-            <div>
-                <h1>Tech Hub NL <img class="photothumbnail" src="/assets/profile/verifyLQ.png">  </h1>
-                <p class="grayfont">2,000 posts</p>
-            </div>
+      <header class="profile-top">
+        <div>
+          <h1 class="user-name">
+            Tech Hub NL
+            <img class="photothumbnail" src="/assets/profile/verified.png" />
+          </h1>
+          <p class="grayfont">2,000 posts</p>
         </div>
+      </header>
 
-        <div class="profile cover-photo">
-            <img src="/assets/profile/CoverPhoto.png">
-        </div>
+      <div class="profile cover-photo">
+        <img src="/assets/profile/CoverPhoto.png" />
+      </div>
 
-        <div class="profile-bottom">
-            <a href="">
-                <img src="/assets/profile/TechHubNLlogo.png" class="profile-photo" id="photo1"></i>
-            </a>
-            <div class="profile-follow">
-                <a href="" class="infobutton">
-                    <i class="fa-solid fa-circle-info" id="infoicon"></i>
-                </a>
-                <a href="" >
-                    <p class="follow follow-black" id="followicon" >Follow</p>
-                </a>
-            </div>
+      <div class="profile-bottom">
+        <a href="">
+          <img
+            src="/assets/profile/TechHubNLlogo.png"
+            class="profile-photo"
+            id="photo1"
+          />
+        </a>
+        <div class="profile-follow">
+          <a href="" class="infobutton">
+            <i class="fa-solid fa-circle-info" id="infoicon"></i>
+          </a>
+          <a href="">
+            <p class="follow follow-black" id="followicon">Follow</p>
+          </a>
         </div>
+      </div>
 
-        <div class="profile topmargin">
-            <h1>Tech Hub NL <img class="photothumbnail" src="/assets/profile/verifyLQ.png">  </h1>
-            <p class="grayfont">@TechHubNL</p>
-        </div>
-        
-        <div class="profile">
-            <p>
-                Welcome to Tech Hub's official account for Newfoundland and Labrador, Canada. For Support, please visit <a href="#">techhubnl.ca/contact</a>
-            </p>
-            <p class="grayfont">
-                <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-                <a href="#">techhubnl.ca</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-regular fa-calendar">&nbsp;&nbsp;</i>
-                Joined February 25, 2024
-            </p>
-            <p class="grayfont">
-                <a href="#" id="followinglink"><span class="bold">10</span></a> Following &nbsp;&nbsp;
-                <span class="bold">200K</span> Followers
-            </p>
-            <p class="grayfont">
-                <img class="photothumbnail" src="/assets/profile/KeyinNavLogo.png"></img>&nbsp;&nbsp;
-                Followed by Keyin College
-            </p>
-        </div>
+      <div class="profile topmargin">
+        <h2 class="user-name">
+          Tech Hub NL
+          <img class="photothumbnail" src="/assets/profile/verified.png" />
+        </h2>
+        <p class="grayfont">@TechHubNL</p>
+      </div>
 
-        <div class="profile-tabs">
-            <a href="" class="flex-item tab-active" id="postsicon">Posts</a>
-            <a href="" class="flex-item" id="repliesicon">Replies</a>
-            <a href="" class="flex-item" id="mediaicon">Media</a>
-            <a href="" class="flex-item" id="likesicon">Likes</a>
+      <div class="profile">
+        <p>
+          Welcome to Tech Hub's official account for Newfoundland and Labrador,
+          Canada. For Support, please visit <a href="#">techhubnl.ca/contact</a>
+        </p>
+        <p class="grayfont">
+          <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
+          <a href="#">techhubnl.ca</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <i class="fa-regular fa-calendar">&nbsp;&nbsp;</i>
+          Joined February 25, 2024
+        </p>
+        <p class="grayfont">
+          <a href="#" id="followinglink"><span class="bold">10</span></a>
+          Following &nbsp;&nbsp; <span class="bold">200K</span> Followers
+        </p>
+        <div class="grayfont followed-by">
+          <img class="photothumbnail" src="/assets/profile/KeyinNavLogo.png" />
+          <span>Followed by Keyin College</span>
         </div>
-        
-        <!-- <div>
+      </div>
+
+      <div class="profile-tabs">
+        <a href="" class="flex-item tab-active" id="postsicon">Posts</a>
+        <a href="" class="flex-item" id="likesicon">Followers</a>
+      </div>
+
+      <!-- <div>
             <div class="flex-item">
                 <hr class="toggletabs">                
             </div>
             
         </div> -->
-        <hr>
-    </section>  
+      <hr />
+    </section>
+
+    <section class="post-feed"></section>
+
+    <script src="../../js/feed.js"></script>
     <script src="/js/profile.js"></script>
-</body>
+  </body>
 </html>

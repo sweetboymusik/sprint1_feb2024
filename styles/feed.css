@@ -5,8 +5,8 @@
   --font-light-grey: lightgrey;
   --font-color: black;
   --bg-color: white;
-  --hashtag: blue;
-  --comment: blue;
+  --hashtag: #2196f3;
+  --comment: #2196f3;
   --heart: red;
   --re-post: green;
   --bookmark: magenta;
@@ -23,8 +23,8 @@
 
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
+  background-color: var(--bg-color);
 }
 
 .dark {
@@ -50,6 +50,7 @@ a {
 
 p {
   line-height: 1.5;
+  color: var(--font-color);
 }
 
 .post-feed {
@@ -59,7 +60,10 @@ p {
   justify-content: center;
   gap: 2px;
   padding: 2px;
-  background-color: black;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  background-color: var(--font-color);
 }
 
 .hashtag {
@@ -280,6 +284,7 @@ p {
   align-content: center;
   gap: 16px;
   justify-content: center;
+  background-color: none;
 }
 
 .share i,

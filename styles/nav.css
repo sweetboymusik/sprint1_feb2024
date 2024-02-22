@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 :root {
   --font-grey: grey;
@@ -7,67 +6,61 @@
   --bg-color: white;
 }
 
-
 * {
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: var(--font-color);
   background: var(--bg-color);
-
 }
 
 /* Nav link tag */
-#nav-link {
-
+.nav-link {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-link i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 32px;
+  align-self: center;
 }
 
 /* Main nav box */
 .nav-Box {
-
   display: flex;
-  margin-right: auto;
-  background-color: var(--bg-color);
-  width: 35vh;
-  height: 140vh;
-  position: absolute;
-}
-
-/* holds the majority of the nav's text */
-.nav-TextContainer {
- 
+  flex-direction: column;
+  justify-content: space-between;
   text-align: left;
   width: 200px;
-  padding-top: 30px;
-  margin-left: 15px;
+  height: 1000px;
+  padding-top: 32px;
+  position: sticky;
+  top: 0;
+  font-size: 1.3rem;
 }
 
-/* holds that line that seperates the nav from everythibg else */
-.nav-LineContainer {
-
-  flex: 1;
-  padding-top: 20px;
+.sticky {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 16px;
+  position: sticky;
+  top: 32px;
 }
-
-/* that line that seperates the nav from everythibg else */
-.nav-Line {
- 
-  width: 2px;
-  height: 135vh;
-  margin-left: 65px;
-  background-color: var(--font-color);
-}
-
 
 /* LIGHT AND DARKMODE SWITCH */
 
 /* hold the switch */
 .switch-Container {
-
-  padding-top: 100vh;
+  display: flex;
+  gap: 16px;
 }
 
 .switch {
@@ -92,8 +85,8 @@
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -104,27 +97,23 @@
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /* style for after slider is toggled */
 input:checked + .slider {
-  background-color: #2196F3;
-  
-
+  background-color: #2196f3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-  
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
-  
 }
 
 /* makes slider round */
