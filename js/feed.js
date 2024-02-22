@@ -427,7 +427,7 @@ function handleReplyAdd(e) {
   userName.innerHTML = `<a href="">${"you"}</a>`;
   userInfo.innerHTML = `@${"you"} &CenterDot; <time>just now</time>`;
   pic.innerHTML = `
-  <img src="../assets/user.png" 
+  <img src="../assets/feed/user.png" 
        alt="user profile picture" 
        class="post-profile-pic">`;
 
