@@ -40,7 +40,7 @@ function tabClick(e) {
 
 function followingClick(e) {
     e.preventDefault();
-    window.open("/following.html", "_blank", "width=600,height=600");
+    window.open("./following.html", "_blank", "width=600,height=600");
 }
 
 profilephoto.addEventListener("click", photoClick);
