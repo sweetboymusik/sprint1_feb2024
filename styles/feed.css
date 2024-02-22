@@ -27,16 +27,6 @@ body {
   background-color: var(--bg-color);
 }
 
-.dark {
-  background-color: var(--darkmode-bg);
-  color: white;
-}
-
-.light {
-  background-color: var(--lightmode-bg);
-  color: black;
-}
-
 button {
   border: none;
   background: none;
