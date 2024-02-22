@@ -1,0 +1,140 @@
+[
+  {
+    "id": 10001,
+    "user": "jackcodes",
+    "userName": "Jack Jackson",
+    "verified": false,
+    "time": "1h ago",
+    "content": "1/ 💡 Hey coding enthusiasts! Ready to dive into the world of zeros and ones? Today, let's explore some coding wonders together! A thread: ",
+    "reposts": 139,
+    "hearts": 470,
+    "bookmark": false,
+    "media": [],
+    "comments": [
+      {
+        "id": 40001,
+        "user": "jackcodes",
+        "userName": "Jack Jackson",
+        "verified": false,
+        "time": "1h ago",
+        "content": "1/ 💡 Hey coding enthusiasts! Ready to dive into the world of zeros and ones? Today, let's explore some coding wonders together! A thread: ",
+        "trash": false
+      }
+    ],
+    "hearted": false,
+    "reposted": false
+  },
+  {
+    "id": 10002,
+    "user": "jackcodes",
+    "userName": "Jack Jackson",
+    "verified": false,
+    "time": "Feb 03, 2024",
+    "content": "Trying out OCaml and Rust this week. Pretty interesting!",
+    "reposts": 3,
+    "hearts": 324,
+    "bookmark": false,
+    "media": [],
+    "comments": [],
+    "hearted": false,
+    "reposted": false
+  },
+  {
+    "id": 10003,
+    "user": "jackcodes",
+    "userName": "Jack Jackson",
+    "verified": false,
+    "time": "Jan 26, 2024",
+    "content": "Accidentally pushed to prod... uh oh.",
+    "reposts": 231,
+    "hearts": 543,
+    "bookmark": false,
+    "media": [],
+    "comments": [],
+    "hearted": false,
+    "reposted": false
+  },
+  {
+    "id": 10004,
+    "user": "jackcodes",
+    "userName": "Jack Jackson",
+    "verified": false,
+    "time": "Dec 31, 2023",
+    "content": "Happy New Year, everyone!",
+    "reposts": 10,
+    "hearts": 104,
+    "bookmark": false,
+    "media": [],
+    "comments": [],
+    "hearted": false,
+    "reposted": false
+  },
+  {
+    "id": 10005,
+    "user": "verymarypod",
+    "userName": "The Very Mary Podcast",
+    "verified": true,
+    "time": "19m ago",
+    "content": "🎙️ Dive into the delightful world of <a href='' class='hashtag'>#VeryMaryPodcast</a>!",
+    "reposts": 2,
+    "hearts": 34,
+    "bookmark": false,
+    "media": [
+      "<img src='../assets/podcast.jpg' alt='photo of a microphone' class='post-image' />"
+    ],
+    "comments": [],
+    "hearted": false,
+    "reposted": false
+  },
+  {
+    "id": 10006,
+    "user": "verymarypod",
+    "userName": "The Very Mary Podcast",
+    "verified": true,
+    "time": "19m ago",
+    "content": "🎙️ Dive into the delightful world of <a href='' class='hashtag'>#VeryMaryPodcast</a>!",
+    "reposts": 2,
+    "hearts": 34,
+    "bookmark": false,
+    "media": [
+      "<img src='../assets/podcast.jpg' alt='photo of a microphone' class='post-image' />"
+    ],
+    "comments": [],
+    "hearted": false,
+    "reposted": false
+  },
+  {
+    "id": 10007,
+    "user": "verymarypod",
+    "userName": "The Very Mary Podcast",
+    "verified": true,
+    "time": "19m ago",
+    "content": "🎙️ Dive into the delightful world of <a href='' class='hashtag'>#VeryMaryPodcast</a>!",
+    "reposts": 2,
+    "hearts": 34,
+    "bookmark": false,
+    "media": [
+      "<img src='../assets/podcast.jpg' alt='photo of a microphone' class='post-image' />"
+    ],
+    "comments": [],
+    "hearted": false,
+    "reposted": false
+  },
+  {
+    "id": 10008,
+    "user": "verymarypod",
+    "userName": "The Very Mary Podcast",
+    "verified": true,
+    "time": "19m ago",
+    "content": "🎙️ Dive into the delightful world of <a href='' class='hashtag'>#VeryMaryPodcast</a>!",
+    "reposts": 2,
+    "hearts": 34,
+    "bookmark": false,
+    "media": [
+      "<img src='../assets/podcast.jpg' alt='photo of a microphone' class='post-image' />"
+    ],
+    "comments": [],
+    "hearted": false,
+    "reposted": false
+  }
+]
