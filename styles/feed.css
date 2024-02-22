@@ -124,12 +124,12 @@ p {
 .post-profile-pic {
   height: 64px;
   width: 64px;
-  border: 2px white solid;
+  border: 2px var(--bg-color) solid;
   border-radius: 100px;
 }
 
 .post-profile-pic:hover {
-  border: 2px black solid;
+  border: 2px var(--font-color) solid;
 }
 
 .post-verified-icon {
