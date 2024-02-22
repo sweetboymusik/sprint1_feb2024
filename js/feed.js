@@ -112,7 +112,7 @@ function generatePost(post) {
       <div class="post-container">
         <a href="">
           <img
-            src="../assets/${user}.png"
+            src="../assets/feed/${user}.png"
             alt="user profile picture"
             class="post-profile-pic"
           />
@@ -189,7 +189,7 @@ function generateReply(reply) {
 
       <a href="">
         <img
-          src="../assets/${user}.png"
+          src="../assets/feed/${user}.png"
           alt="user profile picture"
           class="post-profile-pic"
         />
@@ -226,7 +226,7 @@ function isVerified(verified) {
   return verified
     ? `
       <img
-        src="../assets/verified.png"
+        src="../assets/feed/verified.png"
         alt="verified icon"
         class="post-verified-icon"
       />`
