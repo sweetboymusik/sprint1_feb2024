@@ -7,7 +7,7 @@ fetch('following.json')
             let photocell = row.insertCell();
             let handlecell = row.insertCell();
             let namecell = row.insertCell();
-            photocell.innerHTML = `<img src="${following.photo}" alt="follower" class="followerphoto">`;
+            photocell.innerHTML = `<img src="${following.photo}" alt="follower" class="followingphoto">`;
             handlecell.textContent = following.handle;
             namecell.textContent = following.name;
         });

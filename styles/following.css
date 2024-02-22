@@ -1,4 +1,4 @@
-.follower {
+.following {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -6,11 +6,11 @@
     margin: 0 10px;
     }
 
-.follower td {
+.following td {
         padding: 0 10px;
     }
 
-.followerphoto {
+.followingphoto {
     width: 25px;
     height: 25px;
     border-radius: 50%;
