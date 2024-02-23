@@ -10,7 +10,7 @@
     "hearts": 98,
     "bookmark": false,
     "media": [
-      "<img src='../assets/media/podcast.jpg' alt='photo of a microphone' class='post-image' />"
+      "<img src='../../assets/media/podcast.jpg' alt='photo of a microphone' class='post-image' />"
     ],
     "comments": [],
     "hearted": false,
@@ -28,7 +28,7 @@
     "hearts": 877,
     "bookmark": false,
     "media": [
-      "<img src='../assets/media/serengeti-regal-african-safaris.jpg' alt='photo of serengeti' class='post-image' />"
+      "<img src='../../assets/media/serengeti-regal-african-safaris.jpg' alt='photo of serengeti' class='post-image' />"
     ],
     "comments": [],
     "hearted": false,
@@ -138,7 +138,7 @@
     "hearts": 622,
     "bookmark": false,
     "media": [
-      "<img src='../assets/media/lauterbrunnen-robin-ulrich.jpg' alt='photo of lauterbrunnen' class='post-image' />"
+      "<img src='../../assets/media/lauterbrunnen-robin-ulrich.jpg' alt='photo of lauterbrunnen' class='post-image' />"
     ],
     "comments": [],
     "hearted": false,
@@ -204,7 +204,7 @@
     "hearts": 7816,
     "bookmark": false,
     "media": [
-      "<img src='../assets/media/balabac-cris-tagupa.jpg' alt='photo of balabac' class='post-image' />"
+      "<img src='../../assets/media/balabac-cris-tagupa.jpg' alt='photo of balabac' class='post-image' />"
     ],
     "comments": [],
     "hearted": false,
@@ -254,7 +254,7 @@
     "hearts": 786,
     "bookmark": false,
     "media": [
-      "<img src='../assets/media/amazon-ivars-utinans.jpg' alt='photo of amazon' class='post-image' />"
+      "<img src='../../assets/media/amazon-ivars-utinans.jpg' alt='photo of amazon' class='post-image' />"
     ],
     "comments": [],
     "hearted": false,

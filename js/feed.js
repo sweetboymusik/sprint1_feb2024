@@ -546,7 +546,7 @@ function handlePost(e) {
   // create html template
   let html = `
     <div class="post-container">
-      <a href="">
+      <a href="../../pages/profile/${newPost.user}.html">
         <img
           src="../../assets/feed/${newPost.user}.png"
           alt="user profile picture"
@@ -557,7 +557,9 @@ function handlePost(e) {
       <div class="post-contents">
 
         <header class="post-header">
-          <h3 class="post-user-name"><a href="">${newPost.userName}</a></h3>
+          <h3 class="post-user-name"><a href="../../pages/profile/${
+            newPost.user
+          }.html">${newPost.userName}</a></h3>
           ${isVerified(newPost.verified)}
           <span>@${newPost.user} &CenterDot; <time>${newPost.time}</time></span>
         </header>
