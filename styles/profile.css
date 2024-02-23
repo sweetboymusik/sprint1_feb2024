@@ -24,8 +24,12 @@ a {
   color: #2196f3;
 }
 
-.profile p {
+.profile-container p {
   margin-bottom: 8px;
+}
+
+.profile-container a {
+  color: #2196f3;
 }
 
 hr {
@@ -39,15 +43,13 @@ main {
   margin-top: 32px;
 }
 
-.profile p,
-.profile h1,
-.profile h2,
-.profile span,
-.profile i {
+.profile-container h1,
+.profile-container h2,
+.profile-container i {
   color: var(--font-color);
 }
 
-.profile a p {
+.profile-container a p {
   color: var(--bg-color);
 }
 
@@ -81,7 +83,7 @@ main {
   justify-content: center;
   align-items: left;
   width: 600px;
-  /* padding-bottom: 16px; */
+  padding-bottom: 16px;
 }
 
 .user-name {
@@ -171,10 +173,6 @@ main {
   color: var(--font-color);
 }
 
-.grayfont {
-  color: var(--font-grey);
-}
-
 .photothumbnail {
   width: 24px;
   height: 24px;
@@ -190,4 +188,8 @@ main {
 
 .hide {
   display: none;
+}
+
+.grayfont {
+  color: var(--font-grey);
 }

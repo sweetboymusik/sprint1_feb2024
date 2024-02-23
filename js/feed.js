@@ -199,7 +199,7 @@ function generateReply(reply) {
   let html = `
       <i class="fa-solid fa-arrow-turn-up reply-icon"></i>
 
-      <a href="">
+      <a href="../../pages/profile/${user}.html">
         <img
           src="../../assets/feed/${user}.png"
           alt="user profile picture"
@@ -210,7 +210,7 @@ function generateReply(reply) {
       <div class="post-contents">
 
         <header class="post-header">
-          <h3 class="post-user-name"><a href="">${userName}</a></h3>
+          <h3 class="post-user-name"><a href="../../pages/profile/${user}.html">${userName}</a></h3>
           ${isVerified(verified)}
           <span>@${user} &CenterDot; <time>${time}</time></span>
         </header>
@@ -455,7 +455,7 @@ function handleReplyAdd(e) {
   userName.innerHTML = `<a href="../pages/profile/profile.html">Tech Hub NL</a>`;
   userInfo.innerHTML = `@TechHubNL &CenterDot; <time>just now</time>`;
   pic.innerHTML = `
-  <img src="../assets/feed/TechHubNL.png" 
+  <img src="../../assets/feed/TechHubNL.png" 
        alt="user profile picture" 
        class="post-profile-pic">`;
 
@@ -548,7 +548,7 @@ function handlePost(e) {
     <div class="post-container">
       <a href="">
         <img
-          src="../assets/feed/${newPost.user}.png"
+          src="../../assets/feed/${newPost.user}.png"
           alt="user profile picture"
           class="post-profile-pic"
         />
