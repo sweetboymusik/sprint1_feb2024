@@ -43,6 +43,9 @@ if (page === "Home") {
   posts.forEach((post) => generatePost(post));
 }
 
+// create end of feed post
+generateEndOfFeed();
+
 function updatePostData(id, key, value) {
   // read post data from local storage
   let data = JSON.parse(localStorage.getItem("postData"));
@@ -276,6 +279,22 @@ function generateReplyField() {
   return container;
 }
 
+function generateEndOfFeed() {
+  let endOfFeed = `
+  <article class="">
+    <div class="post-container end">
+    <p>End of feed. Back to the top!</p>
+    <i class="fa-solid fa-circle-up" id="back-to-top"></i>
+    </div>
+  </article>
+`;
+
+  let end = document.createElement("article");
+  end.classList.add("post-container", "end");
+  end.innerHTML = endOfFeed;
+  feed.appendChild(end);
+}
+
 function handleComment(e) {
   // reference icon
   let icon = this.children[0];
@@ -475,6 +494,7 @@ function handleReplyDel(e) {
 // set event listeners for each post/reply element
 const posts = document.querySelectorAll(".post");
 const deleteBtn = document.querySelectorAll(".fa-trash-can");
+let topBtn = document.getElementById("back-to-top");
 
 posts.forEach((post) => {
   let commentBtn = post.querySelector(".comment");
@@ -500,17 +520,8 @@ deleteBtn.forEach((btn) => {
   btn.addEventListener("click", handleReplyDel);
 });
 
-// insert end of feed component
-let endOfFeed = `
-  <article class="post">
-    <div class="post-container end">
-    <p>End of feed. Back to the top!</p>
-    <a href="#top"><i class="fa-solid fa-circle-up"></i></a>
-    </div>
-  </article>
-`;
+topBtn.addEventListener("click", (e) => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
-let end = document.createElement("article");
-end.classList.add("post-container", "end");
-end.innerHTML = endOfFeed;
-feed.appendChild(end);
+// insert end of feed component

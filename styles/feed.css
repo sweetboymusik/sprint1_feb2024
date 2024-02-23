@@ -2,15 +2,15 @@
 
 :root {
   --font-grey: grey;
-  --font-light-grey: lightgrey;
+  --font-light-grey: #ccc;
   --font-color: #111;
   --bg-color: #eee;
   --hashtag: #2196f3;
   --comment: #2196f3;
-  --heart: #b01733;
-  --re-post: #21a52e;
-  --bookmark: #ca8638;
-  --share: #ab72c9;
+  --heart: #d2425d;
+  --re-post: #5ab86f;
+  --bookmark: #ce8c2f;
+  --share: #9f43d0;
   --delete: rgb(42, 161, 161);
 }
 
@@ -132,6 +132,12 @@ p {
   max-height: 400px;
   width: 100%;
   gap: 4px;
+}
+
+.post-images iframe {
+  width: 482px;
+  max-height: 400px;
+  border-radius: 8px;
 }
 
 .post-image {
@@ -291,6 +297,7 @@ p {
   border-radius: 8px;
   border: none;
   background-color: var(--font-light-grey);
+  color: var(--font-color);
   padding: 8px 16px;
   margin-left: 80px;
 }
@@ -318,4 +325,8 @@ p {
 
 .end i:hover {
   color: var(--comment);
+}
+
+#back-to-top {
+  cursor: pointer;
 }
