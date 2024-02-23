@@ -19,10 +19,11 @@ Below are some of the features of the page:
   
 The proponents incorporated insights gained from the first part of the Winter Semester, as well as information available on the internet. This includes, but is not limited to, the following:  
   
-Figma from the UI/UX Design course, which helped the proponents design the project's flow.  
-JavaScript, HTML, and CSS coding.  
-DOM Manipulation.  
-Proper use of Semantic tags in HTML.  
+1. Figma from the UI/UX Design course, which helped the proponents design the project's flow.  
+2. JavaScript, HTML, and CSS coding.  
+3. DOM Manipulation.  
+4. Proper use of Semantic tags in HTML.  
+  
 As a result, the well-commented finished project uploaded on GitHub satisfies the required criteria for Sprint 1.  
   
 Finally, the proponents would like to acknowledge some sources such as Font Awesome, YouTube (videos), Unsplash (photos), and ChatGPT (text contents and suggestions).  
