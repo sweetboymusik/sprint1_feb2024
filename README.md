@@ -1,10 +1,10 @@
-**Enhanced X/Twitter Page Replication: Tricks and Tweaks**  
+**ChatNest: A Enhanced Replication of X/Twitter Page**  
 **_Sprint 1 Requirement, Winter Semester, AY 2023-24_**  
 _Submitted by: Elliot Butt, Zachary Hulan, Joseph Flores_  
   
-The proponents of this project replicated the functionality of X, the former Twitter page/application. Although no login elements were utilized, the project focused on the feed function as well as the settings. The final output was a feed application where users could create, like, 'retweet,' and bookmark posts. It featured both hardcoded and newly created messages, along with several media formats.  
+The proponents of ChatNest replicated the functionality of X, the former Twitter page/application. Although no login elements were utilized, ChatNest focused on the feed function as well as the settings. The final output was a feed application where users could create, like, 'retweet,' and bookmark posts. It featured both hardcoded and newly created messages, along with several media formats.  
   
-Below are some of the features of the project:  
+Below are some of the features of ChatNest:  
   
 1. All pages comprise a navigation tab placed on the left side of the page, the main feed or profile tab in the middle, and a side box on the right.  
 2. The Navigation tab contains the following buttons: Home, Profile, Bookmarks, and Settings. It is worth mentioning that these are all functional buttons, with all links created by the proponents. Additionally, a cool feature included in the project is the Dark and Light modes, allowing users to toggle the button and switch the background from dark to light (and vice versa). This setting will remain consistent across all pages unless toggled again.  
