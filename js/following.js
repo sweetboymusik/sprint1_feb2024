@@ -1,3 +1,8 @@
+/* 
+This file is used to fetch the following data 
+from following.json file and display it in the following.html page.
+*/
+
 fetch('/data/following.json')
     .then(response => response.json())
     .then(following => {
