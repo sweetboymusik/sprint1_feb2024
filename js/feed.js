@@ -43,6 +43,10 @@ if (page === "Home") {
 } else if (page === "Bookmarks") {
   let posts = postData.filter((post) => post.bookmark === true);
   posts.forEach((post) => generatePost(post));
+} else if (page === "Profile") {
+  console.log("profile page");
+  let posts = postData.filter((post) => post.user === "TechHubNL");
+  posts.forEach((post) => generatePost(post));
 } else {
   let posts = postData.filter((post) => post.user === page);
   posts.forEach((post) => generatePost(post));
@@ -118,9 +122,9 @@ function generatePost(post) {
   // create html template
   let html = `
       <div class="post-container">
-        <a href="">
+        <a href="../../pages/profile/${user}.html">
           <img
-            src="../assets/feed/${user}.png"
+            src="../../assets/feed/${user}.png"
             alt="user profile picture"
             class="post-profile-pic"
           />
@@ -129,7 +133,7 @@ function generatePost(post) {
         <div class="post-contents">
 
           <header class="post-header">
-            <h3 class="post-user-name"><a href="">${userName}</a></h3>
+            <h3 class="post-user-name"><a href="../../pages/profile/${user}.html">${userName}</a></h3>
             ${isVerified(verified)}
             <span>@${user} &CenterDot; <time>${time}</time></span>
           </header>
@@ -197,7 +201,7 @@ function generateReply(reply) {
 
       <a href="">
         <img
-          src="../assets/feed/${user}.png"
+          src="../../assets/feed/${user}.png"
           alt="user profile picture"
           class="post-profile-pic"
         />
@@ -234,7 +238,7 @@ function isVerified(verified) {
   return verified
     ? `
       <img
-        src="../assets/feed/verified.png"
+        src="../../assets/feed/verified.png"
         alt="verified icon"
         class="post-verified-icon"
       />`
@@ -448,7 +452,7 @@ function handleReplyAdd(e) {
 
   // assign values to elements
   text.innerText = input;
-  userName.innerHTML = `<a href="">Tech Hub NL</a>`;
+  userName.innerHTML = `<a href="../pages/profile/profile.html">Tech Hub NL</a>`;
   userInfo.innerHTML = `@TechHubNL &CenterDot; <time>just now</time>`;
   pic.innerHTML = `
   <img src="../assets/feed/TechHubNL.png" 
@@ -672,5 +676,8 @@ topBtn.addEventListener("click", (e) => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-postBtn.addEventListener("click", handlePost);
-postInput.addEventListener("keydown", handlePost);
+if (postBox) {
+  postBtn.addEventListener("click", handlePost);
+
+  postInput.addEventListener("keydown", handlePost);
+}
