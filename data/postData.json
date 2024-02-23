@@ -103,7 +103,7 @@
     "hearts": 104,
     "bookmark": false,
     "media": [
-      "<iframe width='560' height='315' src='https://www.youtube.com/embed/K74l26pE4YA?si=YHH8_DuwHup3QYO1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+      "<iframe width='560' height='315' src='https://www.youtube.com/embed/K74l26pE4YA?si=YHH8_DuwHup3QYO1' title='YouTube video player' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
     ],
 
     "comments": [],
