@@ -3,15 +3,15 @@
 :root {
   --font-grey: grey;
   --font-light-grey: lightgrey;
-  --font-color: black;
-  --bg-color: white;
+  --font-color: #111;
+  --bg-color: #eee;
   --hashtag: #2196f3;
   --comment: #2196f3;
-  --heart: red;
-  --re-post: green;
-  --bookmark: magenta;
-  --share: purple;
-  --delete: teal;
+  --heart: #b01733;
+  --re-post: #21a52e;
+  --bookmark: #ca8638;
+  --share: #ab72c9;
+  --delete: rgb(42, 161, 161);
 }
 
 * {
@@ -25,16 +25,6 @@ body {
   display: flex;
   justify-content: center;
   background-color: var(--bg-color);
-}
-
-.dark {
-  background-color: var(--darkmode-bg);
-  color: white;
-}
-
-.light {
-  background-color: var(--lightmode-bg);
-  color: black;
 }
 
 button {
@@ -58,11 +48,10 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
-  padding: 2px;
   margin-top: 32px;
-  margin-bottom: 32px;
-
+  gap: 1px;
+  padding: 0px 1px;
+  width: 600px;
   background-color: var(--font-color);
 }
 
@@ -83,7 +72,7 @@ p {
 .post-container {
   display: flex;
   background-color: var(--bg-color);
-  width: 596px;
+  width: 598px;
   padding: 16px;
   gap: 16px;
 }
@@ -312,4 +301,21 @@ p {
   padding: 0px 32px;
   border-radius: 8px;
   color: white;
+}
+
+.end {
+  /* height: 80px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.end i {
+  font-size: 3rem;
+  color: var(--font-color);
+}
+
+.end i:hover {
+  color: var(--comment);
 }

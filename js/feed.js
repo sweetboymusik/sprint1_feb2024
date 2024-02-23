@@ -499,3 +499,18 @@ posts.forEach((post) => {
 deleteBtn.forEach((btn) => {
   btn.addEventListener("click", handleReplyDel);
 });
+
+// insert end of feed component
+let endOfFeed = `
+  <article class="post">
+    <div class="post-container end">
+    <p>End of feed. Back to the top!</p>
+    <a href="#top"><i class="fa-solid fa-circle-up"></i></a>
+    </div>
+  </article>
+`;
+
+let end = document.createElement("article");
+end.classList.add("post-container", "end");
+end.innerHTML = endOfFeed;
+feed.appendChild(end);

@@ -11,10 +11,10 @@
       referrerpolicy="no-referrer"
     />
     <link href="../styles/feed.css" rel="stylesheet" />
-    <link href="../styles/nav.css" rel="stylesheet" />
+    <link href="../styles/nav_news.css" rel="stylesheet" />
     <title>Home</title>
   </head>
-  <body>
+  <body id="top">
     <nav class="nav-Box">
       <div class="sticky">
         <a class="nav-link" href="index.html"
@@ -29,6 +29,7 @@
         <a class="nav-link" href="settings.html"
           ><i class="fa-solid fa-cog"></i><span>Settings</span></a
         >
+
         <!-- Darkmode switch -->
         <div class="switch-Container">
           <p>Dark Mode</p>
@@ -40,7 +41,46 @@
       </div>
     </nav>
 
-    <section class="post-feed"></section>
+    <main class="post-feed"></main>
+
+    <aside class="sticky">
+      <div class="aside-box">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input
+          type="text"
+          class="aside-box search-input"
+          placeholder="Search"
+        />
+      </div>
+
+      <div class="aside-box vid-box">
+        <h3>Videos</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/X2vNGwMCw-M?si=e5z-dKrKk6tBsHL8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="news-vid"
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JkaxUblCGz0?si=RUlTYgR0TlB0L6W8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="news-vid"
+        ></iframe>
+      </div>
+
+      <footer class="aside-box">
+        <p>&copy; Fake Site 2024 - All rights reserved</p>
+      </footer>
+    </aside>
 
     <script type="text/javascript" src="../js/darkmode.js"></script>
     <script src="../js/feed.js"></script>
