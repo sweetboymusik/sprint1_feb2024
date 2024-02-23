@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../styles/feed.css" rel="stylesheet" />
+    <link href="../styles/nav_news.css" rel="stylesheet" />
+
+    <title>Bookmarks</title>
+  </head>
+  <body id="top">
+    <nav class="nav-Box">
+      <div class="sticky">
+        <a class="nav-link" href="index.html"
+          ><i class="fa-solid fa-house"></i><span>Home</span></a
+        >
+        <a class="nav-link" href="./profile/profile.html"
+          ><i class="fa-solid fa-user"></i><span>Profile</span></a
+        >
+        <a class="nav-link" href="bookmarks.html"
+          ><i class="fa-solid fa-bookmark"></i><span>Bookmarks</span></a
+        >
+        <a class="nav-link" href="settings.html"
+          ><i class="fa-solid fa-cog"></i><span>Settings</span></a
+        >
+
+        <!-- Darkmode switch -->
+        <div class="switch-Container">
+          <p>Dark Mode</p>
+          <label class="switch">
+            <input type="checkbox" id="darkmode" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </nav>
+
+    <main class="bookmarks-feed"></main>
+
+    <aside class="sticky">
+      <div class="aside-box">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input
+          type="text"
+          class="aside-box search-input"
+          placeholder="Search"
+        />
+      </div>
+
+      <div class="aside-box vid-box">
+        <h3>Videos</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/X2vNGwMCw-M?si=e5z-dKrKk6tBsHL8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="news-vid"
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JkaxUblCGz0?si=RUlTYgR0TlB0L6W8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="news-vid"
+        ></iframe>
+      </div>
+
+      <footer class="aside-box">
+        <p>&copy; Fake Site 2024 - All rights reserved</p>
+      </footer>
+    </aside>
+
+    <script src="../js/darkmode.js"></script>
+    <script src="../js/bookmarks.js"></script>
+  </body>
+</html>
