@@ -74,6 +74,7 @@ main {
 .profile-follow {
   display: flex;
   flex-direction: row;
+  transform: translateY(8px);
 }
 
 .profile {
@@ -192,4 +193,8 @@ main {
 
 .grayfont {
   color: var(--font-grey);
+}
+
+#postsicon {
+  color: var(--font-color);
 }
