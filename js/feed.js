@@ -135,7 +135,7 @@ function generatePost(post) {
           <header class="post-header">
             <h3 class="post-user-name"><a href="../../pages/profile/${user}.html">${userName}</a></h3>
             ${isVerified(verified)}
-            <span>@${user} &CenterDot; <time>${time}</time></span>
+            <span>@${user} &CenterDot; <span>${time}</span></span>
           </header>
 
           <p class="post-text">
@@ -212,7 +212,7 @@ function generateReply(reply) {
         <header class="post-header">
           <h3 class="post-user-name"><a href="../../pages/profile/${user}.html">${userName}</a></h3>
           ${isVerified(verified)}
-          <span>@${user} &CenterDot; <time>${time}</time></span>
+          <span>@${user} &CenterDot; <span>${time}</span></span>
         </header>
 
         <p class="post-text">
@@ -453,7 +453,7 @@ function handleReplyAdd(e) {
   // assign values to elements
   text.innerText = input;
   userName.innerHTML = `<a href="../pages/profile/profile.html">Tech Hub NL</a>`;
-  userInfo.innerHTML = `@TechHubNL &CenterDot; <time>just now</time>`;
+  userInfo.innerHTML = `@TechHubNL &CenterDot; <span>just now</span>`;
   pic.innerHTML = `
   <img src="../../assets/feed/TechHubNL.png" 
        alt="user profile picture" 
@@ -561,7 +561,7 @@ function handlePost(e) {
             newPost.user
           }.html">${newPost.userName}</a></h3>
           ${isVerified(newPost.verified)}
-          <span>@${newPost.user} &CenterDot; <time>${newPost.time}</time></span>
+          <span>@${newPost.user} &CenterDot; <span>${newPost.time}</span></span>
         </header>
 
         <p class="post-text">
