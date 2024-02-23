@@ -1,4 +1,4 @@
-**Enhanced X/Twitter Page Replication: Tips and Tweaks**  
+**Enhanced X/Twitter Page Replication: Tricks and Tweaks**  
 **_Sprint 1 Requirement, Winter Semester, AY 2023-24_**  
 _Submitted by: Elliot Butt, Zachary Hulan, Joseph Flores_  
   
@@ -12,9 +12,9 @@ Below are some of the features of the page:
 4. The Main Feed is where the big chuck of the project focused on, which heavily rely on the use of JavaScript to display different elements such as the profile photo, user details, various media files, and different interactive buttons such as the comment, retweet, like, bookmark and forward/send. Users will be able to view the changes they made even if the page was reopened.  
 4.1. The profile photo and name, once clicked, will bring the user to the profile page of the author of the tweet.  
 4.2. The comment button will allow the user to add comment (text) just below the main tweet, and all elements under it will be adjusted accordingly.  
-4.3. Hit retweet and like and they will change the button output and increase the counters.  
+4.3. Hit retweet and like and they will change the button display output and increase the counters. Hit agian and it will go back to default display and counter.  
 4.4. The bookmark button will let the user to add tweets to the bookmarks page.  
-5. The profile page of each twitter user features some information such as ther handle, description, some account statistics, display photo and cover photo, as well as a post feed at the bottom. Users can also toggle between Posts and Followers tab.  
+5. The profile page of each twitter user features some information such as their handle, description, some account statistics, display photo and cover photo, as well as a post feed at the bottom. Users can also toggle between Posts and Followers tab.  
 6. The Settings page has the delete and mode options.  
   
 The proponents incorporated insights gained from the first part of the Winter Semester, as well as information available on the internet. This includes, but is not limited to, the following:  
