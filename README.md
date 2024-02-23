@@ -14,7 +14,7 @@ Below are some of the features of ChatNest:
 4.2. The comment button will allow the user to add comment (text) just below the main tweet, and all elements under it will be adjusted accordingly.  
 4.3. Hit retweet and like and they will change the button display output and increase the counters. Hit agian and it will go back to default display and counter.  
 4.4. The bookmark button will let the user to add tweets to the bookmarks page.  
-5. The profile page of each twitter user features some information such as their handle, description, some account statistics, display photo and cover photo, as well as a post feed at the bottom. Users can also toggle between Posts and Followers tab.  
+5. The profile page of each twitter user features some information such as their handle, description, some account statistics, display photo and cover photo, as well as a post feed at the bottom.
 6. The Settings page has the delete and mode options.  
   
 The proponents integrated insights acquired during the initial phase of the Winter Semester, alongside information sourced from the internet. This encompassed various elements, including Figma from the UI/UX Design course, instrumental in structuring the project's flow, as well as JavaScript, HTML, and CSS coding. Additionally, they applied DOM Manipulation techniques and ensured the appropriate utilization of Semantic tags in HTML.  
