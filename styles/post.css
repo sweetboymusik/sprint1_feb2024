@@ -27,9 +27,8 @@
 
 /* Style for the post button */
 #post-button {
-  margin-left: 70%;
-  width: 70px;
-  height: 30px;
+  width: 96px;
+  height: 40px;
   border-radius: 8px;
   border-color: var(--font-color);
   background: #2196f3;
@@ -50,6 +49,7 @@
   width: 100%;
   background-color: var(--bg-color);
   padding: 16px;
+  padding-top: 32px;
 }
 
 /* Sub boxes that hold evrything else */
@@ -64,10 +64,13 @@
 }
 
 .post-SubBox2 {
-  width: 95%;
-  text-align: left;
   color: #2196f3;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 88px;
+  margin-top: 16px;
 }
 
 /* The line that seperates the stuff above it from the stuff below it */
@@ -75,4 +78,15 @@
   width: auto;
   height: 2px;
   background: var(--font-color);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.icons i {
+  font-size: 24px;
 }

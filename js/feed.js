@@ -23,7 +23,9 @@ if (!localStorage.getItem("postData"))
       localStorage.setItem("postData", JSON.stringify(data));
       postData = JSON.parse(localStorage.getItem("postData"));
       let id = 90001;
+      let newId = 50001;
       localStorage.setItem("nextId", id);
+      localStorage.setItem("nextPostId", newId);
       location.reload();
     })
     .catch((error) => {
@@ -38,6 +40,9 @@ if (localStorage.getItem("postData")) {
 // generate posts (all for Home page, individual user posts for profile page)
 if (page === "Home") {
   postData.forEach((post) => generatePost(post));
+} else if (page === "Bookmarks") {
+  let posts = postData.filter((post) => post.bookmark === true);
+  posts.forEach((post) => generatePost(post));
 } else {
   let posts = postData.filter((post) => post.user === page);
   posts.forEach((post) => generatePost(post));
@@ -491,10 +496,153 @@ function handleReplyDel(e) {
   updatePostData(postId.slice(2), "replyDel", replyId.slice(2));
 }
 
-// set event listeners for each post/reply element
+function handlePost(e) {
+  // exit function if enter key is not the button pressed
+  if (e.target.id === "post-Input" && e.key !== "Enter") return;
+
+  // get input and reset input field
+  let input;
+  if (e.target.id === "post-Input") {
+    input = e.target.value;
+    e.target.value = null;
+  } else {
+    input = document.getElementById("post-Input").value;
+    document.getElementById("post-Input").value = null;
+  }
+
+  console.log(input);
+
+  // check if input field is empty and exit if true
+  if (!input) {
+    alert("Post cannot be empty!");
+    return;
+  }
+
+  // get next newPostId from local storage and increment it
+  let nextId = parseInt(localStorage.getItem("nextPostId"));
+  localStorage.setItem("nextPostId", `${nextId + 1}`);
+
+  // create new post object
+  let newPost = {
+    id: nextId,
+    user: "TechHubNL",
+    userName: "Tech Hub NL",
+    verified: true,
+    time: "just now",
+    content: input,
+    reposts: 0,
+    hearts: 0,
+    bookmark: false,
+    media: [],
+    comments: [],
+    hearted: false,
+    reposted: false,
+  };
+
+  // create html template
+  let html = `
+    <div class="post-container">
+      <a href="">
+        <img
+          src="../assets/feed/${newPost.user}.png"
+          alt="user profile picture"
+          class="post-profile-pic"
+        />
+      </a>
+
+      <div class="post-contents">
+
+        <header class="post-header">
+          <h3 class="post-user-name"><a href="">${newPost.userName}</a></h3>
+          ${isVerified(newPost.verified)}
+          <span>@${newPost.user} &CenterDot; <time>${newPost.time}</time></span>
+        </header>
+
+        <p class="post-text">
+          ${newPost.content}
+        </p>
+
+        ${generateMedia(newPost.media) || ""}
+
+        <footer class="post-footer">
+
+          <button class="post-button comment">
+            <i class="fa-regular fa-comment"></i>
+            <span>${newPost.comments.length}</span>
+          </button>
+
+          <button type="button" class="${
+            newPost.reposted ? `active` : ""
+          } post-button re-post">
+            <i class="fa-solid fa-retweet"></i>
+            <span>${newPost.reposts}</span>
+          </button>
+
+          <button class="${newPost.hearted ? `active` : ""} post-button heart">
+            <i class="${
+              newPost.hearted ? `fa-solid` : `fa-regular`
+            } fa-heart"></i>
+            <span>${newPost.hearts}</span>
+          </button>
+
+          <div class="post-button share">
+            <button type="button">
+              <i class="${
+                newPost.bookmark ? "active fa-solid" : "fa-regular"
+              } fa-bookmark bookmark"></i>
+            </button>
+            <button type="button">
+              <i class="fa-solid fa-arrow-up-from-bracket send"></i>
+            </button>
+
+          </div>
+        </footer>
+      </div>
+    </div>`;
+
+  // add new post to feed element
+  let postElement = document.createElement("article");
+  postElement.classList.add("post");
+  postElement.id = `id${newPost.id}`;
+  postElement.innerHTML = html;
+  postElement.appendChild(generateReplyField());
+  postBox.after(postElement);
+
+  // write new post data to beginning of list
+  let data = JSON.parse(localStorage.getItem("postData"));
+  data.unshift(newPost);
+  localStorage.setItem("postData", JSON.stringify(data));
+
+  // set all new event listeners
+  let post = document.getElementById(postElement.id);
+  console.log(post);
+
+  let commentBtn = post.querySelector(".comment");
+  let repostBtn = post.querySelector(".re-post");
+  let heartBtn = post.querySelector(".heart");
+  let bookmarkBtn = post.querySelector(".bookmark");
+  let sendBtn = post.querySelector(".send");
+
+  let replyBtn = post.querySelector(".reply-btn");
+  let replyInput = post.querySelector(".reply-input");
+
+  commentBtn.addEventListener("click", handleComment);
+  repostBtn.addEventListener("click", handleRepost);
+  heartBtn.addEventListener("click", handleHeart);
+  bookmarkBtn.addEventListener("click", handleBookmark);
+  sendBtn.addEventListener("click", handleSend);
+
+  replyBtn.addEventListener("click", handleReplyAdd);
+  replyInput.addEventListener("keydown", handleReplyAdd);
+}
+
+// set event listeners
 const posts = document.querySelectorAll(".post");
 const deleteBtn = document.querySelectorAll(".fa-trash-can");
-let topBtn = document.getElementById("back-to-top");
+const topBtn = document.getElementById("back-to-top");
+const postBtn = document.getElementById("post-button");
+const postInput = document.getElementById("post-Input");
+const postBox = document.querySelector(".post-Box1");
 
 posts.forEach((post) => {
   let commentBtn = post.querySelector(".comment");
@@ -524,4 +672,5 @@ topBtn.addEventListener("click", (e) => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// insert end of feed component
+postBtn.addEventListener("click", handlePost);
+postInput.addEventListener("keydown", handlePost);
