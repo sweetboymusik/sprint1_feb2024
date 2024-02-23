@@ -1,6 +1,6 @@
-**ChatNest: An Enhanced Replication of X/Twitter Page**  
+# **ChatNest: An Enhanced Replication of X/Twitter Page**  
 **_Sprint 1 Requirement, Winter Semester, AY 2023-24_**  
-_Submitted by: Elliot Butt, Zachary Hulan, Joseph Flores_
+_Submitted by: Elliott Butt, Zachary Hulan, Joseph Flores_
 
 Link to the Figma file here (was too large for upload to GitHub)
 https://www.figma.com/file/XlTdy2kV2qKfS0oN5iKZ50/Sprint?type=design&node-id=0%3A1&mode=design&t=la1EDmfaXyWPZL3u-1
