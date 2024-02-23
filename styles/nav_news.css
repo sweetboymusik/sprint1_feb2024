@@ -211,3 +211,7 @@ footer p {
   color: var(--font-color);
   font-size: 1.5rem;
 }
+
+iframe {
+  border: none;
+}
