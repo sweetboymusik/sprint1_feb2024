@@ -53,7 +53,16 @@
         "userName": "Jack Jackson",
         "verified": false,
         "time": "1h ago",
-        "content": "1/ 💡 Hey coding enthusiasts! Ready to dive into the world of zeros and ones? Today, let's explore some coding wonders together! A thread: ",
+        "content": "2/ 🌐 Ever wondered how websites magically appear on your screen? It's all about HTML! 💻🔗 Let's break down the basics. ",
+        "trash": false
+      },
+      {
+        "id": 40001,
+        "user": "jackcodes",
+        "userName": "Jack Jackson",
+        "verified": false,
+        "time": "1h ago",
+        "content": "3/ 🖌️ HTML is the backbone of web content. Tags like head, body, and p structure the page. It's like giving instructions to your browser on how to display information.",
         "trash": false
       }
     ],
