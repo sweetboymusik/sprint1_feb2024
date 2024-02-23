@@ -2,7 +2,7 @@
 **_Sprint 1 Requirement, Winter Semester, AY 2023-24_**  
 _Submitted by: Elliot Butt, Zachary Hulan, Joseph Flores_  
   
-The proponents of ChatNest replicated the functionality of X, the former Twitter page/application. Although no login elements were utilized, ChatNest focused on the feed function as well as the settings. The final output was a feed application where users could create, like, 'retweet,' and bookmark posts. It featured both hardcoded and newly created messages, along with several media formats.  
+The proponents of ChatNest replicated the functionality of X, the former Twitter page/application. Although no login elements were utilized, ChatNest focused on the feed function as well as the settings. The final output was a feed application where users could create, like, 'retweet', and bookmark posts. It featured both hardcoded and newly created messages, along with several media formats.  
   
 Below are some of the features of ChatNest:  
   
