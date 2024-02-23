@@ -52,7 +52,7 @@
   padding-top: 32px;
 }
 
-/* Sub boxes that hold evrything else */
+/* Sub boxes that hold everything else */
 .post-SubBox1 {
   display: flex;
   justify-content: center;
@@ -73,7 +73,7 @@
   margin-top: 16px;
 }
 
-/* The line that seperates the stuff above it from the stuff below it */
+/* The line that separates the stuff above it from the stuff below it */
 .post-Line {
   width: auto;
   height: 2px;
