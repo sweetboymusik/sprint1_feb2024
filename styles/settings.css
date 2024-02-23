@@ -21,7 +21,7 @@
 
 #delete-button {
 
-  margin-left: 70%;
+  
   width: 70px;
   height: 30px;
   border-radius: 20px;
@@ -74,7 +74,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 296px;
+  width: 500px;
   height: 100vh;
 
 }
@@ -91,11 +91,6 @@ main {
 
 
 /* LIGHT AND DARKMODE SWITCH */
-
-/* holds the switch */
-.switch-Container {
-  margin-left: 70%;
-}
 
 .switch {
   position: relative;
