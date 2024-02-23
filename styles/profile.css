@@ -179,17 +179,6 @@ hr {
   border-radius: 50%;
 }
 
-.toggletabs {
-  display: flex;
-  width: 75px;
-  border-top: 5px solid#3AA0FF;
-  border-radius: 50px;
-  margin-top: 5px;
-  margin-inline-start: 40px;
-  justify-content: center;
-  align-items: center;
-}
-
 .followed-by {
   display: flex;
   align-items: center;

@@ -24,7 +24,7 @@ function followClick(e) {
 
 function infoClick(e) {
   e.preventDefault();
-  alert("For more information, please visit www.techhubnl.ca");
+  alert("For more information, please visit our website.");
 }
 
 function tabClick(e) {

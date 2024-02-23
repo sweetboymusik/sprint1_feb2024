@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+
+:root {
+  --font-grey: grey;
+  --font-color: black;
+  --bg-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: var(--font-color);
+  background: var(--bg-color);
+  
+}
+
+/* TAGS */
+
+#delete-button {
+
+  margin-left: 70%;
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  border-color: var(--font-color);
+  background: rgb(70, 141, 255);
+  color: white;
+}
+
+
+/* CLASSES */
+body {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+main {
+
+  display: flex;
+  flex-direction: column;
+  width: 596px;
+  height: 100vh;
+  padding-top: 15px;
+  
+}
+
+
+
+.settings-top {
+
+  width: 596px;
+  height: 35px;
+  font-size: 25px;
+  border: solid;
+  border-width: 0px;
+  border-bottom-width: 2px;
+  border-color: var(--font-color);
+
+}
+
+
+.column-container {
+  display: flex;
+  padding-top: 30px;
+}
+
+.column-1 {
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 296px;
+  height: 100vh;
+
+}
+
+.column-2 {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  height: 100vh;
+
+}
+
+
+/* LIGHT AND DARKMODE SWITCH */
+
+/* holds the switch */
+.switch-Container {
+  margin-left: 70%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* style for the slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* style for after slider is toggled */
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* makes slider round */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
