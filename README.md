@@ -17,16 +17,15 @@ Below are some of the features of the page:
 5. The profile page of each twitter user features some information such as ther handle, description, some account statistics, display photo and cover photo, as well as a post feed at the bottom. Users can also toggle between Posts and Followers tab.  
 6. The Settings page has the delete and mode options.  
   
-The proponents incorporated the insights gained from the first part of the Winter Semester, as well as information available on the internet. This includes, but is not limited to, the following:  
+The proponents incorporated insights gained from the first part of the Winter Semester, as well as information available on the internet. This includes, but is not limited to, the following:  
   
-1. Figma from UI/UX Design course, which helped the proponents design the flow of the project  
-2. Javascript, HTML and CSS coding  
-3. DOM Manipulation  
-4. Proper use of SEmantic tags in HTML  
+Figma from the UI/UX Design course, which helped the proponents design the project's flow.  
+JavaScript, HTML, and CSS coding.  
+DOM Manipulation.  
+Proper use of Semantic tags in HTML.  
+As a result, the well-commented finished project uploaded on GitHub satisfies the required criteria for Sprint 1.  
   
-As as result, the well-commented finished project which was uploaded in GitHub satisfy the requirements needed.  
-  
-Finally, the proponents would like to acknowledge some sources such as Fontawesome, Youtube (videos), Unsplash (photos), chatGPT (text contents and suggestions).  
+Finally, the proponents would like to acknowledge some sources such as Font Awesome, YouTube (videos), Unsplash (photos), and ChatGPT (text contents and suggestions).  
   
 Thank you.  
 
