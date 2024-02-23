@@ -1,4 +1,4 @@
-**ChatNest: A Enhanced Replication of X/Twitter Page**  
+**ChatNest: An Enhanced Replication of X/Twitter Page**  
 **_Sprint 1 Requirement, Winter Semester, AY 2023-24_**  
 _Submitted by: Elliot Butt, Zachary Hulan, Joseph Flores_  
   
