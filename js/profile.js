@@ -8,7 +8,6 @@ let profilephoto = document.querySelector("#photo1");
 let followpic = document.querySelector("#followicon");
 let infopic = document.querySelector("#infoicon");
 let postspic = document.querySelector("#postsicon");
-let followerspic = document.querySelector("#likesicon");
 let following = document.querySelector("#followinglink");
 
 // Open the profile photo in a new tab when clicked
@@ -59,5 +58,4 @@ followpic.addEventListener("click", followClick);
 infopic.addEventListener("click", infoClick);
 
 postspic.addEventListener("click", tabClick);
-followerspic.addEventListener("click", tabClick);
 following.addEventListener("click", followingClick);
