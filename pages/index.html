@@ -11,6 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link href="../styles/feed.css" rel="stylesheet" />
+    <link href="../styles/post.css" rel="stylesheet" />
     <link href="../styles/nav_news.css" rel="stylesheet" />
 
     <title>Home</title>
@@ -30,7 +31,7 @@
         <a class="nav-link" href="settings.html"
           ><i class="fa-solid fa-cog"></i><span>Settings</span></a
         >
-
+        <br />
         <!-- Darkmode switch -->
         <div class="switch-Container">
           <p>Dark Mode</p>
@@ -42,7 +43,35 @@
       </div>
     </nav>
 
-    <main class="post-feed"></main>
+    <main class="post-feed">
+      <div class="post-Box1">
+        <div class="post-SubBox1">
+          <img
+            src="../assets/profile/TechHubNLlogo.png"
+            width="50px"
+            height="50px"
+            id="post-image"
+          />
+          <input
+            id="post-Input"
+            style="font-size: 20px"
+            placeholder="Whats happening?"
+          />
+        </div>
+
+        <div class="post-SubBox2">
+          <p>
+            <i class="fa-solid fa-globe"></i> Public
+            <button id="post-button">Post</button>
+          </p>
+          <div class="post-Line"></div>
+          <p>
+            <i class="fa-solid fa-camera"></i>
+            <i class="fa-regular fa-calendar"></i>
+          </p>
+        </div>
+      </div>
+    </main>
 
     <aside class="sticky">
       <div class="aside-box">

@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  color: black;
 }
 
 :root {
@@ -16,20 +15,8 @@
 
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  /* padding: 2px; */
-  margin-top: 32px;
   background-color: var(--bg-color);
-  position: relative;
 }
 
 a {
@@ -37,22 +24,36 @@ a {
   color: #2196f3;
 }
 
-body p {
-  margin-bottom: 10px;
+.profile p {
+  margin-bottom: 8px;
 }
 
 hr {
   width: 600px;
   border: none;
-  border-top: 2px solid#000000;
+  border-top: 2px solid var(--font-color);
   margin-top: 20px;
+}
+
+main {
+  margin-top: 32px;
+}
+
+.profile p,
+.profile h1,
+.profile h2,
+.profile span,
+.profile i {
+  color: var(--font-color);
+}
+
+.profile a p {
+  color: var(--bg-color);
 }
 
 .profile-top {
   display: flex;
-  background-color: var(--bg-color);
   width: 600px;
-  padding-top: 16px;
   gap: 16px;
 }
 
@@ -80,9 +81,7 @@ hr {
   justify-content: center;
   align-items: left;
   width: 600px;
-  /* background-color: var(--bg-color); */
-  padding-top: 16px;
-  padding-bottom: 16px;
+  /* padding-bottom: 16px; */
 }
 
 .user-name {
@@ -141,8 +140,11 @@ hr {
   font-size: 35px;
 }
 
+.infobutton p {
+}
+
 .follow-black {
-  background-color: black;
+  background-color: var(--font-color);
 }
 
 .follow-blue {
