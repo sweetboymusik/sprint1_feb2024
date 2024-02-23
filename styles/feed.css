@@ -51,6 +51,7 @@ p {
   /* margin-top: 32px; */
   gap: 1px;
   padding: 0px 1px;
+  padding-bottom: 1px;
   width: 600px;
   background-color: var(--font-color);
 }
@@ -307,7 +308,7 @@ p {
   background-color: var(--comment);
   padding: 0px 32px;
   border-radius: 8px;
-  color: white;
+  color: var(--bg-color);
 }
 
 .end {

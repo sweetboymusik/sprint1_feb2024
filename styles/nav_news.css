@@ -47,7 +47,6 @@
 .sticky {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   gap: 16px;
   position: sticky;
   top: 32px;
@@ -139,7 +138,7 @@ aside {
 }
 
 .aside-box h3 {
-  border-bottom: 4px var(--font-color) solid;
+  border-bottom: 1px var(--font-color) solid;
   padding-bottom: 4px;
 }
 
